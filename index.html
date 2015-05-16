@@ -7,11 +7,6 @@
 
 <script type="text/javascript">
 //<![CDATA[
-/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Disable context menu on images by GreenLava (BloggerSentral.com)
-Version 1.0
-You are free to copy and share this code but please do not remove this credit notice.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
     function nocontext(e) {
         var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
         if (clickedTag == "IMG") {
@@ -19,7 +14,7 @@ You are free to copy and share this code but please do not remove this credit no
             return false;
         }
     }
-    var alertMsg = "Image context menu is disabled";
+    var alertMsg = "Please do not copy";
     document.oncontextmenu = nocontext;
 //]]>
 </script>
