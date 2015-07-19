@@ -58,7 +58,10 @@ body {
 
 .cover-background-image {
   background-image: url("/img/background-img.jpg");
-  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .cover-heading {
