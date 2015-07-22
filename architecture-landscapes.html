@@ -1,0 +1,36 @@
+---
+layout: default
+
+images:
+- Architecture_1
+- Architecture_2
+- Architecture_3
+- Architecture_4
+- Architecture_5
+- Architecture_6
+- Architecture_7
+- Architecture_8
+- Architecture_9
+- Architecture_10
+- Architecture_11
+- Architecture_12
+- Architecture_13
+- Architecture_14
+- Architecture_15
+- Architecture_16
+- Architecture_17
+---
+
+<body>
+
+  <div class="site-wrapper">
+    <div class="clearfix mosaicflow">
+      {% for image in page.images %}
+      <div class="mosaicflow__item">
+        <img src="/img/architecture-landscapes/{{ image }}.jpg">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+    <script src="/js/jquery.mosaicflow.min.js"></script>
+  </body>

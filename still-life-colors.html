@@ -1,0 +1,29 @@
+---
+layout: default
+
+images:
+- Still-Life_1
+- Still-Life_2
+- Still-Life_3
+- Still-Life_4
+- Still-Life_5
+- Still-Life_6
+- Still-Life_7
+- Still-Life_8
+- Still-Life_9
+
+---
+
+<body>
+
+  <div class="site-wrapper">
+    <div class="clearfix mosaicflow">
+      {% for image in page.images %}
+      <div class="mosaicflow__item">
+        <img src="/img/still-life-colors/{{ image }}.jpg">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+    <script src="/js/jquery.mosaicflow.min.js"></script>
+  </body>

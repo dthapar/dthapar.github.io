@@ -1,36 +1,45 @@
 ---
 layout: default
-
-images:
-- Portraits_1
-- Portraits_2
-- Portraits_13-1
-- Portraits_3
-- Portraits_4
-- Portraits_5
-- Portraits_6
-- Portraits_7
-- Portraits_8
-- Portraits_9
-- Portraits_10
-- Portraits_11
-- Portraits_12
-- Portraits_14
-- Portraits_15
-- Portraits_16
-- Portraits_17
 ---
 
 <body>
 
   <div class="site-wrapper">
-    <div class="clearfix mosaicflow">
-      {% for image in page.images %}
-      <div class="mosaicflow__item">
-        <img src="/img/urban-portraits/{{ image }}.jpg">
+
+    <div class="site-wrapper-inner">
+
+      <div class="cover-container">
+        <div class="inner cover">
+        <a href="/urban-portraits"><h1 class="cover-heading">Urban Portraits
+</h1></a>
+
+<a href="/architecture-landscapes"><h1 class="cover-heading">Architecture & Landscapes
+</h1></a>
+
+<a href="/still-life-colors"><h1 class="cover-heading">Still Life & Color
+</h1></a>
+             
+
+
+<br>
+<br>
+<br>
+            <a href="/index">Home</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="/projects">Projects</a>
+            <a href="/bio">Bio</a>
+          </p>
+        </div>
+
+        <div class="mastfoot">
+          <div class="inner">
+            <p><!-- text --></p>
+          </div>
+        </div>
+
       </div>
-      {% endfor %}
+
     </div>
+
   </div>
-    <script src="/js/jquery.mosaicflow.min.js"></script>
-  </body>
+</body>
