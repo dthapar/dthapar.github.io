@@ -2,19 +2,45 @@
 layout: default
 ---
 
-<div class="home">
+<body>
 
-  <h1>Posts</h1>
+  <div class="site-wrapper cover-background-image">
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+    <div class="site-wrapper-inner">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <div class="cover-container">
 
-</div>
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand"><!-- text --></h3>
+                <!-- nav
+                <nav>
+                  <ul class="nav masthead-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </nav>
+              -->
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Dhwani Thapar</h1>
+            <p class="lead"><!-- tagline --></p>
+            <p class="lead">
+            <a href="/portfolio">Portfolio</a>
+              <a href="/projects">Projects</a>
+              <a href="/bio">Bio</a>
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p><!-- text --></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
