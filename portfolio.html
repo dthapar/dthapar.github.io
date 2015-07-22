@@ -1,70 +1,36 @@
 ---
 layout: default
 
+images:
+- Portraits_1
+- Portraits_2
+- Portraits_13-1
+- Portraits_3
+- Portraits_4
+- Portraits_5
+- Portraits_6
+- Portraits_7
+- Portraits_8
+- Portraits_9
+- Portraits_10
+- Portraits_11
+- Portraits_12
+- Portraits_14
+- Portraits_15
+- Portraits_16
+- Portraits_17
+---
 
-<section class="portfolio section" id="portfolio">
-	<div class="container content">
-		<div class="row">
-			<div class="small-12 columns">
-				<h2>Portfolio</h2>
-			</div>
-			<div class="small-12 medium-4 columns thumb">
-				<div class="card center-block">
-					<div class="front face"><img alt="..." src="http://lorempixel.com/400/200/"></div>
-					<div class="back face center">
-						<h3>Portfolio Item 1</h3>
-						<p><a class="button radius" href="http://s.codepen.io/RickHocutt/fullpage/qHLzg">View</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="small-12 medium-4 columns thumb">
-				<div class="card center-block">
-					<div class="front face"><img alt="..." src="http://lorempixel.com/400/200/"></div>
-					<div class="back face center">
-						<h3>Portfolio Item 2</h3>
-						<p><a class="button radius" href="http://s.codepen.io/RickHocutt/fullpage/qHLzg">View</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="small-12 medium-4 columns thumb">
-				<div class="card center-block">
-					<div class="front face"><img alt="..." src="http://lorempixel.com/400/200/"></div>
-					<div class="back face center">
-						<h3>Portfolio Item 3</h3>
-						<p><a class="button radius" href="http://s.codepen.io/RickHocutt/fullpage/qHLzg">View</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="small-12 medium-4 columns thumb">
-				<div class="card center-block">
-					<div class="front face"><img alt="..." src="http://lorempixel.com/400/200/"></div>
-					<div class="back face center">
-						<h3>Portfolio Item 4</h3>
-						<p><a class="button radius" href="http://s.codepen.io/RickHocutt/fullpage/qHLzg">View</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="small-12 medium-4 columns thumb">
-				<div class="card center-block">
-					<div class="front face"><img alt="..." src="http://lorempixel.com/400/200/"></div>
-					<div class="back face center">
-						<h3>Portfolio Item 5</h3>
-						<p><a class="button radius" href="http://s.codepen.io/RickHocutt/fullpage/qHLzg">View</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="small-12 medium-4 columns thumb">
-				<div class="card center-block">
-					<div class="front face"><img alt="..." src="http://lorempixel.com/400/200/"></div>
-					<div class="back face center">
-						<h3>Portfolio Item 6</h3>
-						<p><a class="button radius" href="http://s.codepen.io/RickHocutt/fullpage/qHLzg">View</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<div class="reveal-modal" data-reveal="" id="modal-1"></div>
+<body>
+
+  <div class="site-wrapper">
+    <div class="clearfix mosaicflow">
+      {% for image in page.images %}
+      <div class="mosaicflow__item">
+        <img src="/img/urban-portraits/{{ image }}.jpg">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+    <script src="/js/jquery.mosaicflow.min.js"></script>
+  </body>
